@@ -1,0 +1,27 @@
+<div class="wrapper">
+    <div class="login-container">
+        <h1>Login</h1>
+
+        <input type="text" placeholder="username" [(ngModel)]="login">
+        <input type="password" placeholder="password" [(ngModel)]="password">
+
+
+        <button (click)="loginService.login(login, password)"
+            [disabled]="login.length <= 1 || password.length <= 1">Login</button>
+    </div>
+    <div class="register-container">
+        <h1>Register User</h1>
+
+        <input type="text" placeholder="username" [(ngModel)]="registerLogin">
+        <input type="password" placeholder="password" [(ngModel)]="registerPassword">
+        <input type="email" placeholder="eMail" [(ngModel)]="registerEmail">
+
+
+        <button (click)="loginService.register(registerLogin, registerPassword, registerEmail)"
+            [disabled]="registerLogin.length <= 1 || registerPassword.length <= 1 || registerEmail.length <= 1">Register</button>
+    </div>
+
+    <button (click)="loginService.testAsync()">TEST ASYNC</button><br><br>
+    <button (click)="loginService.testOhneAsync()">TEST OHNE ASYNC</button>
+
+</div>

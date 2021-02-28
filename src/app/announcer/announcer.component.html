@@ -1,0 +1,28 @@
+<div class="container">
+    <div *ngFor="let announcement of announcerService.activeAnnouncements"
+        [ngClass]="{'announcement-information' : announcement.type === ANNOUNCEMENT_TYPE.INFORMATION,
+                    'announcement-warning' : announcement.type === ANNOUNCEMENT_TYPE.WARNING,
+                    'announcement-confirmation' : announcement.type === ANNOUNCEMENT_TYPE.CONFIRMATION,
+                    'announcement-error' : announcement.type === ANNOUNCEMENT_TYPE.ERROR}">
+        
+        <div class="heading">
+            <div class="symbol">
+                <i *ngIf="announcement.type === ANNOUNCEMENT_TYPE.INFORMATION" class="fas fa-info"></i>
+                <i *ngIf="announcement.type === ANNOUNCEMENT_TYPE.WARNING" class="fas fa-exclamation"></i>
+                <i *ngIf="announcement.type === ANNOUNCEMENT_TYPE.ERROR" class="fas fa-exclamation-circle"></i>
+                <i *ngIf="announcement.type === ANNOUNCEMENT_TYPE.CONFIRMATION" class="fas fa-check"></i>                                
+            </div>
+            <div class="header">
+                {{announcement.heading}}
+            </div>
+            <div class="dismiss-button" (click)="announcerService.dismissAnnouncement(announcement)">
+                <i class="fas fa-times"></i>
+            </div>
+        </div>
+
+        <div class="text">
+            {{announcement.text}}
+        </div>
+        
+    </div>
+</div>

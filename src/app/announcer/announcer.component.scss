@@ -1,0 +1,195 @@
+.container {
+    display:flex;
+    position: relative;
+    width:100%;
+    height:auto;
+    flex-direction: column;
+    
+
+    .announcement-error {
+
+        display:flex;
+        flex-direction: column;
+        position: relative;
+        width: 100%;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgba(255, 0, 0, 0.75);
+        margin-bottom: 15px;
+
+        .heading {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            font-size: 25px;
+            .symbol {
+                display: flex;
+                position: relative;
+                width:40px;
+                font-size: 20px;
+                padding-left: 10px;
+                align-items: center;
+                justify-content: flex-start;
+            }
+
+            .header {
+                display: flex;
+                flex-grow:1;
+            }
+
+            .dismiss-button {
+                display: flex;
+                width:40px;
+                align-items: center;
+                justify-content: center;
+                font-size: 20px;
+                cursor: pointer;
+            }
+        }
+
+        .text {
+            font-size: 20px;
+            padding: 10px;
+        }
+    }
+
+    .announcement-confirmation {
+
+        display:flex;
+        flex-direction: column;
+        position: relative;
+        width: 100%;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgba(0, 0, 255, 0.75);
+        margin-bottom: 15px;
+
+        .heading {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            font-size: 25px;
+            .symbol {
+                display: flex;
+                position: relative;
+                width:40px;
+                font-size: 20px;
+                padding-left: 10px;
+                align-items: center;
+                justify-content: flex-start;
+            }
+
+            .header {
+                display: flex;
+                flex-grow:1;
+            }
+
+            .dismiss-button {
+                display: flex;
+                width:40px;
+                align-items: center;
+                justify-content: center;
+                font-size: 20px;
+                cursor: pointer;
+            }
+        }
+
+        .text {
+            font-size: 20px;
+            padding: 10px;
+        }
+    }
+
+    .announcement-information {
+
+        display:flex;
+        flex-direction: column;
+        position: relative;
+        width: 100%;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgba(0, 128, 0, 0.75);
+        margin-bottom: 15px;
+
+        .heading {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            font-size: 25px;
+            .symbol {
+                display: flex;
+                position: relative;
+                width:40px;
+                font-size: 20px;
+                padding-left: 10px;
+                align-items: center;
+                justify-content: flex-start;
+            }
+
+            .header {
+                display: flex;
+                flex-grow:1;
+            }
+
+            .dismiss-button {
+                display: flex;
+                width:40px;
+                align-items: center;
+                justify-content: center;
+                font-size: 20px;
+                cursor: pointer;
+            }
+        }
+
+        .text {
+            font-size: 20px;
+            padding: 10px;
+        }
+    }
+
+    .announcement-warning {
+
+        display:flex;
+        flex-direction: column;
+        position: relative;
+        width: 100%;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgba(255, 255, 0, 0.75);
+        margin-bottom: 15px;
+
+        .heading {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            font-size: 25px;
+            .symbol {
+                display: flex;
+                position: relative;
+                width:40px;
+                font-size: 20px;
+                padding-left: 10px;
+                align-items: center;
+                justify-content: flex-start;
+            }
+
+            .header {
+                display: flex;
+                flex-grow:1;
+            }
+
+            .dismiss-button {
+                display: flex;
+                width:40px;
+                align-items: center;
+                justify-content: center;
+                font-size: 20px;
+                cursor: pointer;
+            }
+        }
+
+        .text {
+            font-size: 20px;
+            padding: 10px;
+        }
+    }
+
+}
+
+
